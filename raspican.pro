@@ -1,4 +1,4 @@
-update=Thu 02 Mar 2017 04:37:10 PM PST
+update=Fri 03 Mar 2017 02:25:29 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -81,7 +81,7 @@ LibName10=dip_sockets
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../arbduino
 [eeschema/libraries]
 LibName1=raspican-rescue
 LibName2=power
@@ -114,3 +114,4 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
+LibName32=arbduino-cache
