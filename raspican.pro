@@ -1,4 +1,4 @@
-update=Fri 03 Mar 2017 02:25:29 PM PST
+update=Fri 03 Mar 2017 03:12:39 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -81,7 +81,7 @@ LibName10=dip_sockets
 version=1
 [eeschema]
 version=1
-LibDir=../arbduino
+LibDir=../arbduino;../kicad/mcp2515
 [eeschema/libraries]
 LibName1=raspican-rescue
 LibName2=power
@@ -115,3 +115,4 @@ LibName29=atmel
 LibName30=contrib
 LibName31=valves
 LibName32=arbduino-cache
+LibName33=/home/user/hack/kicad/mcp2515/eelib
