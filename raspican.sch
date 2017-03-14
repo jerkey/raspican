@@ -69,7 +69,7 @@ F 3 "" H 1900 5900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 5900 1900 6050
+	1900 5900 1900 6850
 Wire Wire Line
 	1900 6050 2000 6050
 $Comp
@@ -84,10 +84,9 @@ F 3 "" H 2900 5900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 5900 2900 6050
+	2900 5900 2900 6150
 Wire Wire Line
 	2900 6050 2800 6050
-NoConn ~ 2800 6150
 Wire Wire Line
 	2000 6150 1250 6150
 Wire Wire Line
@@ -100,7 +99,6 @@ Wire Wire Line
 	2000 6350 1250 6350
 Text Label 1250 6350 0    60   ~ 0
 GPIO4
-NoConn ~ 2000 6450
 Wire Wire Line
 	2000 6550 1250 6550
 Wire Wire Line
@@ -113,7 +111,6 @@ Text Label 1250 6650 0    60   ~ 0
 GPIO21
 Text Label 1250 6750 0    60   ~ 0
 GPIO22
-NoConn ~ 2000 6850
 Wire Wire Line
 	2000 6950 1250 6950
 Wire Wire Line
@@ -126,7 +123,6 @@ Text Label 1250 7050 0    60   ~ 0
 GPIO9(MISO)
 Text Label 1250 7150 0    60   ~ 0
 GPIO11(SCLK)
-NoConn ~ 2000 7250
 $Comp
 L GND-RESCUE-raspican #PWR03
 U 1 1 50A55C3F
@@ -154,7 +150,6 @@ Wire Wire Line
 	2800 6550 3500 6550
 Text Label 3500 6550 2    60   ~ 0
 GPIO18
-NoConn ~ 2800 6650
 Wire Wire Line
 	2800 6750 3500 6750
 Wire Wire Line
@@ -163,7 +158,6 @@ Text Label 3500 6750 2    60   ~ 0
 GPIO23
 Text Label 3500 6850 2    60   ~ 0
 GPIO24
-NoConn ~ 2800 6950
 Wire Wire Line
 	2800 7050 3500 7050
 Text Label 3500 7050 2    60   ~ 0
@@ -765,4 +759,29 @@ Wire Wire Line
 	4425 3550 3625 3550
 Wire Wire Line
 	3625 3550 3625 3750
+Wire Wire Line
+	2900 6150 2800 6150
+Connection ~ 2900 6050
+$Comp
+L GND #PWR?
+U 1 1 58C78B04
+P 2000 7250
+F 0 "#PWR?" H 2000 7000 50  0001 C CNN
+F 1 "GND" H 2000 7100 50  0000 C CNN
+F 2 "" H 2000 7250 50  0001 C CNN
+F 3 "" H 2000 7250 50  0001 C CNN
+	1    2000 7250
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 6650
+Connection ~ 2900 6950
+Wire Wire Line
+	2800 6650 2900 6650
+Wire Wire Line
+	2900 6950 2800 6950
+Connection ~ 1900 6050
+Wire Wire Line
+	1900 6850 2000 6850
+Wire Wire Line
+	2000 6450 2000 7250
 $EndSCHEMATC
